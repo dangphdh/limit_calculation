@@ -205,7 +205,7 @@ def example_1a_impact_of_additional_loan():
         change = new_val - old_val
         sign = '+' if change >= 0 else ''
         
-        print(f"{result.limit_name:20} | {old_val/1e9:>13.2f} tỷ | {new_val/1e9:>13.2f} tỷ | {sign}{change/1e9:>13.2f} tỷ")
+        print(f"{result.limit_name:20} | {float(old_val)/1e9:>13.2f} tỷ | {float(new_val)/1e9:>13.2f} tỷ | {sign}{float(change)/1e9:>13.2f} tỷ")
     
     print("-" * 70)
     print()
