@@ -17,11 +17,14 @@ cd limit_calculation
 
 ```
 limit_calculation/
-├── limit_calculator.py           # Module chính - Tính toán hạn mức
-├── example.py                     # Các ví dụ minh họa
-├── test_limit_calculator.py      # Unit tests
+├── limit_calculator.py                  # Module chính - Tính toán hạn mức
+├── example.py                           # Các ví dụ minh họa
+├── test_limit_calculator.py            # Unit tests
+├── limit_examples.ipynb                 # Jupyter notebook examples
+├── databricks_limit_calculation.py     # Databricks notebook (NEW)
+├── DATABRICKS_SETUP.md                 # Hướng dẫn cài đặt Databricks (NEW)
 ├── Tai_lieu_Tinh_Han_muc_Kha_dung.md  # Tài liệu chi tiết
-├── README.md                      # File này
+├── README.md                            # File này
 └── .gitignore
 ```
 
@@ -37,6 +40,21 @@ Sẽ chạy 3 ví dụ:
 - Ví dụ đơn giản: Hạn mức vay không phân cấp
 - Ví dụ 1: Hạn mức phân cấp với CCR và TSĐB liên thông
 - Ví dụ 1A: Tác động khi vay thêm
+
+### 1B. Chạy Databricks Notebook (MỚI)
+
+```bash
+# Xem hướng dẫn chi tiết trong file DATABRICKS_SETUP.md
+```
+
+Notebook Databricks (`databricks_limit_calculation.py`) cho phép:
+- Đọc dữ liệu từ các bảng Spark/Delta
+- Tính toán hạn mức cho nhiều khách hàng
+- Xuất kết quả ra bảng Delta
+- Trực quan hóa kết quả với biểu đồ
+- Phân tích what-if scenarios
+
+**Xem chi tiết**: `DATABRICKS_SETUP.md`
 
 ### 2. Chạy unit tests
 
