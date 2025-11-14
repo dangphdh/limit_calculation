@@ -36,6 +36,12 @@ Dự án tài liệu hướng dẫn chi tiết về cách tính toán hạn mứ
 ```
 limit_calculation/
 ├── Tai_lieu_Tinh_Han_muc_Kha_dung.md  # Tài liệu chi tiết
+├── limit_calculator.py                 # Module Python tính toán
+├── example.py                          # Ví dụ minh họa
+├── limit_examples.ipynb                # Jupyter notebook
+├── databricks_limit_calculation.py    # Databricks notebook (MỚI)
+├── DATABRICKS_SETUP.md                # Hướng dẫn Databricks (MỚI)
+├── test_limit_calculator.py           # Unit tests
 ├── README.md                           # File này
 └── .gitignore                          # Git ignore
 ```
@@ -48,6 +54,7 @@ limit_calculation/
 - ✅ Ví dụ tính toán cụ thể
 - ✅ Code mẫu Python và SQL
 - ✅ Stored Procedure
+- ✅ **Databricks notebook với bảng đầu vào (MỚI)**
 
 ## Phiên bản
 
